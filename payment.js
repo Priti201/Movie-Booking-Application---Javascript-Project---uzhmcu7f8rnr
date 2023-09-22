@@ -5,7 +5,7 @@ const form = document.querySelector("#form")
 
 let movievTitle = localStorage.getItem("mvTitle")
 let moviePrice = localStorage.getItem("mvPrice")
-
+console.log('hello');
 document.querySelector("#movie-name").innerText = `${movievTitle}`
 document.querySelector("#cost-per-ticket").innerText = `${moviePrice}`
 
