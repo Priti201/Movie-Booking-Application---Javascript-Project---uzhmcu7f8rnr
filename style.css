@@ -1,0 +1,464 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Search Section */
+
+.search-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 55px;
+    padding: 15px 0;
+    position: fixed;
+    /* top: 0; */
+    z-index: 9;
+    background-color: white;
+    border-bottom: 1px solid #333;
+}
+
+.title {
+    position: absolute;
+    left: 10px;
+}
+
+.title>a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.search-bar {
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    right: 40px;
+    z-index: 9;
+}
+
+#text-search {
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    outline: 0;
+}
+
+#submit-search {
+    border: 1px solid blue;
+    color: blue;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    z-index: 10;
+}
+
+/* main section */
+
+.main-container-1 {
+    display: flex;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Genre Section */
+
+.genres-section {
+    position: fixed;
+    top: 55px;
+    width: 150px;
+    height: 100vh;
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.genres-section>h1 {
+    padding: 10px;
+}
+
+.genres-section>ul {
+    list-style-type: none;
+}
+
+.genres-section>ul>li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.genre:active {
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.9);
+}
+
+/* Movie List Section */
+
+#movie-list-section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border: 1px solid #333;
+    border-top: none;
+    position: absolute;
+    top: 55px;
+    left: 150px;
+}
+
+#mv-list-title {
+    padding: 5px;
+    margin: 0 30px;
+}
+
+#card-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 10px 30px;
+}
+
+.movie-container {
+    border-radius: 8px;
+    width: 23%;
+    height: 350px;
+    margin: 0 20px 20px 0;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.movie-container:hover {
+    transition: All 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.movie-container>img {
+    width: 100%;
+    height: 85%;
+    border-radius: 8px 8px 0 0;
+}
+
+.movie-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 5px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+}
+
+.empty-gendre {
+    width: 100%;
+    font-size: 25px;
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* Payment File Css */
+
+.main-container-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 10px;
+}
+
+/* Heading Section */
+
+
+#back-btn {
+    border: 2px solid black;
+    width: 60px;
+    padding: 5px;
+    background-color: #555;
+    color: whitesmoke;
+}
+
+#checkout-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+#sub-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    gap: 30px;
+}
+
+
+#ticket-card {
+    border: 1px solid #333;
+    padding: 10px;
+    height: 250px;
+    width: 400px;
+    border-radius: 8px;
+    /* background-color: #888; */
+}
+
+.sum-title {
+    margin-bottom: 5px;
+    font-size: 35px;
+    color: rgb(8, 88, 235);
+}
+
+
+#cost-section,
+#c-fee-section,
+#total-section,
+#count-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    /* color: whitesmoke; */
+}
+
+#count-section>input {
+    /* background-color: transparent; */
+    /* color: whitesmoke; */
+    border: 1px solid rgb(156, 153, 153);
+}
+
+#ticket-card>hr {
+    border: 1px solid rgb(182, 173, 173);
+}
+
+#payment-card {
+    border: 1px solid #333;
+    padding: 10px;
+    height: auto;
+    width: 60%;
+    border-radius: 8px;
+}
+
+.pay-title {
+    font-size: 35px;
+    color: rgb(8, 88, 235);
+}
+
+#first-name,
+#last-name,
+#email {
+    border: 1px solid rgb(156, 153, 153);
+    border-radius: 3px;
+    padding: 5px;
+    margin: 15px 0;
+    width: 220px;
+}
+
+#payment-details {
+    margin-top: 15px;
+}
+
+#payment-card>hr {
+    border: 1px solid rgb(182, 173, 173);
+}
+
+#name-on-card,
+#credit-card-num,
+#exp-date,
+#cvv-num {
+    border: 1px solid rgb(220, 209, 209);
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#info {
+    color: rgb(182, 173, 173);
+    margin-bottom: 5px;
+}
+
+#pay-btn {
+    background-color: rgb(8, 88, 235);
+    color: white;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+}
+
+
+/* modal layout */
+
+.modal-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* z-index: 9999; */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-card {
+    width: 500px;
+    height: 457px;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.img-section {
+    width: 30%;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.img-section img {
+    width: 100%;
+    height: 70%;
+}
+
+.description-section {
+    display: flex;
+    align-items: flex-start;
+    width: 70%;
+}
+
+.description-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 95%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.book-tickets-btn {
+    width: 40%;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #555;
+    color: whitesmoke;
+}
+
+.modal-close-btn {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#close,
+#open {
+    display: none;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 550px) {
+    #card-section {
+        flex-direction: column;
+    }
+
+    #sub-section {
+        flex-direction: column;
+    }
+
+    #first-name,
+    #last-name,
+    #email {
+        display: block;
+        min-width: 90%;
+    }
+
+    #payment-card {
+        min-width: 90%;
+    }
+
+    .movie-container {
+        width: 68%;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    .genres-section {
+        display: none;
+    }
+
+    #movie-list-section {
+        width: 100%;
+        left: 40px;
+    }
+
+    .fa-bars {
+        position: absolute;
+        top: 55px;
+        left: 13px;
+    }
+
+    #open {
+        display: block;
+    }
+
+    #close {
+        display: inline-block;
+        font-size: 50%;
+        left: 2px;
+    }
+
+    .title {
+        width: 30%;
+        font-size: 74%;
+    }
+
+    /* .search-section{
+        width: 55%;
+    } */
+    #text-search {
+        width: 44%;
+    }
+
+    #submit-search {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .search-bar {
+        width: 60%;
+        right: 4%;
+    }
+
+    .title {
+        width: 54%;
+        font-size: 57%;
+    }
+
+    #submit-search {
+        position: fixed;
+        width: 20%;
+        right: 14%;
+        height: 3.7%;
+        padding: 0;
+    }
+}
+
+.open {
+    display: block;
+    z-index: 9;
+}

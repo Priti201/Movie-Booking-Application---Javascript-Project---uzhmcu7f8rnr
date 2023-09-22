@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Booking App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Search Section -->
+    <nav class="search-section">
+      <div class="title">
+        <a href="#main-section"><h3>My Movies App</h3></a> 
+      </div>
+      
+      <div class="search-bar">
+        <input type="text" id="text-search" placeholder="Search here..." />
+        <button id="submit-search" value="search">Search</button>
+      </div>
+    </nav>
+  
+    <!-- main Section -->
+    <div class="main-container-1" id="main-section">
+
+      <!-- Genre Section -->
+      <i class="fa fa-bars" id="open"></i>
+      <div class="genres-section" id="genres-section">
+        <h1>Genres    <i class="fa fa-times" id="close"></i></h1>
+      
+        <ul class="genreList"> 
+        </ul>
+      </div>
+
+      <!-- Movie List Section -->
+      <div id="movie-list-section">
+        <div id="mv-list-title">
+          <h1>Now Playing</h1>
+        </div>
+        <div id="card-section">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-container hidden">
+      
+  </div>
+
+    <script src="https://kit.fontawesome.com/d8f230be4a.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

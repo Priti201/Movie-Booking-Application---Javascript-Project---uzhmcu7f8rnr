@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main-page Section -->
+    <div class="main-container-2">
+      <!-- Heading Section -->
+      <div id="heading-section">
+        <div class="btn-div">
+          <button id="back-btn">Back</button>
+        </div>
+
+        <div id="checkout-title">
+          <h1>Checkout</h1>
+        </div>
+      </div>
+
+      <!-- Summary & Payment Section -->
+      <div id="sub-section">
+        <div id="ticket-card">
+          <h2 class="sum-title">Summary</h2>
+          <h3 id="movie-name">Movie Name</h3>
+
+          <div id="cost-section">
+            <label for="cost-per-ticket">Classic Ticket</label>
+            <p>&#8377; <span id="cost-per-ticket">0</span></p>
+          </div>
+
+          <div id="count-section">
+            <label for="tickets-count">Number of tickets</label>
+            <input type="number" id="tickets-count" min="1" required />
+          </div>
+
+          <div id="c-fee-section">
+            <label for="convenience-fee">Convenience Fee (1.75%)</label>
+            <p>&#8377; <span id="convenience-fee">0</span></p>
+          </div>
+
+          <hr />
+
+          <div id="total-section">
+            <label for="sub-total">Sub total</label>
+            <p>&#8377; <span id="sub-total">0</span></p>
+          </div>
+        </div>
+
+        <div id="payment-card">
+          <form id="form">
+            <h2 class="pay-title">Payment</h2>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" required />
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" required />
+            <hr />
+
+            <div id="payment-details">
+              <input type="radio" name="payment-mode" id="credit-card" required />
+              <label for="credit-card">Credit card</label>
+              <input type="radio" name="payment-mode" id="debit-card" required />
+              <label for="debit-card">Debit card</label>
+              <input type="radio" name="payment-mode" id="upi" required />
+              <label for="upi">Upi</label>
+            </div>
+
+            <div id="card-details">
+              <label for="name-on-card">Name on card</label>
+
+              <input type="text" id="name-on-card" required />
+
+              <p id="info">Full name as displayed on card</p>
+              <label for="credit-card-num">Credit card number</label>
+
+              <input type="number" id="credit-card-num" required />
+
+              <label for="exp-date">Expiration</label>
+
+              <input type="text" id="exp-date" required />
+
+              <label for="cvv-num">CVV</label>
+
+              <input type="number" id="cvv-num" min="100" max="9999" required />
+            </div>
+
+            <button type="submit" id="pay-btn">Proceed to pay</button>
+
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="payment.js"></script>
+  </body>
+</html>
